@@ -17,6 +17,13 @@ public class CarService {
         this.availableCars = new ArrayList<>();
     }
 
+
+
+    public List<Car> getAvailableCars() {
+        return availableCars;
+    }
+
     public void addCarForRent(CarForRentEvent carForRentEvent) {
+
     }
 }

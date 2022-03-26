@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class FormatServiceFieldInjection {
-    public FormatUtil formatUtil;
+    public FormatUtil formatUtil=new FormatUtil();
 
     public void checkFormatted() {
         System.out.println(this.formatUtil.formatted(true));

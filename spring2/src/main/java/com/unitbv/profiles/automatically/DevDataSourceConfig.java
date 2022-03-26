@@ -1,7 +1,9 @@
 package com.unitbv.profiles.automatically;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
+@Profile("!dev")
 @Component
 public class DevDataSourceConfig implements DataSourceConfig {
     @Override

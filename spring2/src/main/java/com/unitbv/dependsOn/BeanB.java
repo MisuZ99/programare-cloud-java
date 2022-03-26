@@ -1,5 +1,5 @@
 package com.unitbv.dependsOn;
 
-public class BeanB {
+public class BeanB extends BeanC{
 
 }

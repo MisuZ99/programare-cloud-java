@@ -1,4 +1,7 @@
 package com.unitbv.dependsOn;
 
-public class BeanA {
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class BeanA extends BeanB{
 }

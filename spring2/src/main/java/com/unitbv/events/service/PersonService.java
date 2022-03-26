@@ -9,6 +9,10 @@ public class PersonService {
 
     private final ApplicationEventPublisher eventPublisher;
 
+    public ApplicationEventPublisher getEventPublisher() {
+        return this.eventPublisher;
+    }
+
     public PersonService(ApplicationEventPublisher eventPublisher) {
         this.eventPublisher = eventPublisher;
     }

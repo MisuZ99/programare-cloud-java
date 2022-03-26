@@ -21,4 +21,21 @@ public class PantryServiceImpl implements PantryService{
     public List<Ingredient> getAllIngredients(){
         return pantry.getAllIngredients();
     }
+
+    @Override
+    public Ingredient postIngredient(Ingredient ingredient) {
+        return pantry.saveIngredient(ingredient);
+    }
+
+    @Override
+    public Ingredient putIngredient(Ingredient ingredient){
+        Ingredient newIngredient=pantry.updateIngredient(ingredient);
+        return pantry.updateIngredient(ingredient);
+    }
+
+    @Override
+    public Boolean delete(String ingredient) {
+        return pantry.deleteIngredient(ingredient);
+    }
+
 }
